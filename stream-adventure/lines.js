@@ -18,7 +18,9 @@ function end(done) {
 
 var stream = through2(write, end);
 
-var input = process.stdin.pipe(split2());
+var input = process.stdin.pipe(split2()).on('data', function(line) {
+    console.dir(line.toString())
+});
 
 
 input.pipe(stream).pipe(process.stdout)

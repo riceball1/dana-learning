@@ -13,5 +13,9 @@
     "@babel/core": "^7.9.6",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-immutable": "^1.0.0"
   }
 }
